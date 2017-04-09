@@ -8,8 +8,8 @@ syntax keyword	monkeyCBoolean		false true
 syntax keyword	monkeyCConditional	if else
 syntax match	monkeyCInclude		"Toybox.\w\+"
 syntax keyword	monkeyCKeyword		using as extends
-syntax keyword	monkeyCStatement	new return continue
-syntax keyword	monkeyCStorageClass	var
+syntax keyword	monkeyCStatement	new return continue hidden
+syntax keyword	monkeyCStorageClass	var const
 syntax keyword	monkeyCStructure	class function
 
 syntax keyword	monkeyCType			Gfx System Lang Ui Timer Attention
