@@ -7,12 +7,13 @@ syntax match	monkeyCCharacter	"L\='[^\\]'"
 syntax keyword	monkeyCBoolean		false true
 syntax keyword	monkeyCConditional	if else
 syntax match	monkeyCInclude		"Toybox.\w\+"
-syntax keyword	monkeyCKeyword		using as extends
+syntax keyword	monkeyCKeyword		using as extends has instanceof
 syntax keyword	monkeyCStatement	new return continue hidden public protected private
 syntax keyword	monkeyCStorageClass	var const
 syntax keyword	monkeyCStructure	class function module
 
-syntax keyword	monkeyCType			Gfx System Lang Ui Timer Attention
+syntax keyword	monkeyCType			Graphics System Lang WatchUi Timer Attention
+syntax keyword  monkeyCType         Number Float Char Long Double String
 
 syntax keyword	monkeyCConstant		COLOR_WHITE COLOR_LT_GRAY COLOR_DK_GRAY COLOR_BLACK COLOR_RED COLOR_DK_RED COLOR_ORANGE COLOR_YELLOW COLOR_GREEN COLOR_DK_GREEN COLOR_BLUE COLOR_DK_BLUE COLOR_PURPLE COLOR_PINK COLOR_TRANSPARENT
 syntax keyword	monkeyCConstant		FONT_XTINY FONT_TINY FONT_SMALL FONT_MEDIUM FONT_LARGE FONT_NUMBER_MILD FONT_NUMBER_MEDIUM FONT_NUMBER_HOT FONT_NUMBER_THAI_HOT FONT_SYSTEM_XTINY FONT_SYSTEM_TINY FONT_SYSTEM_SMALL FONT_SYSTEM_MEDIUM FONT_SYSTEM_LARGE FONT_SYSTEM_NUMBER_MILD FONT_SYSTEM_NUMBER_MEDIUM FONT_SYSTEM_NUMBER_HOT FONT_SYSTEM_NUMBER_THAI_HOT
