@@ -10,7 +10,7 @@ syntax match	monkeyCInclude		"Toybox.\w\+"
 syntax keyword	monkeyCKeyword		using as extends has instanceof
 syntax keyword	monkeyCStatement	new return continue hidden public protected private
 syntax keyword	monkeyCStorageClass	var const
-syntax keyword	monkeyCStructure	class function module
+syntax keyword	monkeyCStructure	class function module enum
 
 syntax keyword	monkeyCType			Graphics System Lang WatchUi Timer Attention
 syntax keyword  monkeyCType         Number Float Char Long Double String
