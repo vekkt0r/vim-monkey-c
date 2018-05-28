@@ -6,7 +6,7 @@ syn region	monkeyCString		start=/\v"/ skip=/\v\\./ end=/\v"/
 syn match	monkeyCCharacter	"L\='[^\\]'"
 syn keyword	monkeyCBoolean		false true
 syn keyword	monkeyCConditional	if else
-syn match	monkeyCInclude		"Toybox.\w\+"
+syn match	monkeyCInclude		"\vToybox(.\u\w+)*[^;]"
 syn keyword	monkeyCKeyword		using as extends has instanceof
 syn keyword	monkeyCStatement	new return continue hidden public protected private
 syn keyword	monkeyCStorageClass	var const
