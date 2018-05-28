@@ -40,24 +40,26 @@ syn match	monkeyCNumber		"\<\d\+\([eE][-+]\=\d\+\)\=[fFdD]\>"
 
 syn match	monkeyCLabel		":\w\+"
 
+syn keyword	monkeyCTodo		TODO FIXME XXX TBD contained
 syn match	monkeyCComment		"\v//.*$"
-syn region	monkeyCComment		start="/\*" end="\*/"
+syn region	monkeyCComment		start="/\*" end="\*/" contains=@Spell,monkeyCTodo
 
-highlight link	monkeyCString		String
-highlight link	monkeyCCharacter	Character
-highlight link	monkeyCBoolean		Constant
-highlight link	monkeyCConditional	Conditional
-highlight link	monkeyCInclude		Include
-highlight link	monkeyCKeyword		Keyword
-highlight link	monkeyCStatement	Statement
-highlight link	monkeyCStructure	Structure
-highlight link	monkeyCStorageClass	StorageClass
-highlight link	monkeyCType		Type
-highlight link	monkeyCConstant		Constant
-highlight link	monkeyCFunction		Function
-highlight link	monkeyCOperator		Operator
-highlight link	monkeyCNumber		Number
-highlight link	monkeyCLabel		Label
-highlight link	monkeyCComment		Comment
+hi link	monkeyCString		String
+hi link	monkeyCCharacter	Character
+hi link	monkeyCBoolean		Constant
+hi link	monkeyCConditional	Conditional
+hi link	monkeyCInclude		Include
+hi link	monkeyCKeyword		Keyword
+hi link	monkeyCStatement	Statement
+hi link	monkeyCStructure	Structure
+hi link	monkeyCStorageClass	StorageClass
+hi link	monkeyCType		Type
+hi link	monkeyCConstant		Constant
+hi link	monkeyCFunction		Function
+hi link	monkeyCOperator		Operator
+hi link	monkeyCNumber		Number
+hi link	monkeyCLabel		Label
+hi link	monkeyCComment		Comment
+hi link	monkeyCTodo		Todo
 
 let b:current_syntax = "monkey-c"
