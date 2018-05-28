@@ -41,7 +41,7 @@ syn match	monkeyCNumber		"\<\d\+\([eE][-+]\=\d\+\)\=[fFdD]\>"
 syn match	monkeyCLabel		":\w\+"
 
 syn keyword	monkeyCTodo		TODO FIXME XXX TBD contained
-syn match	monkeyCComment		"\v//.*$"
+syn match	monkeyCComment		"\/\/.*" contains=@Spell,monkeyCTodo
 syn region	monkeyCComment		start="/\*" end="\*/" contains=@Spell,monkeyCTodo
 
 hi link	monkeyCString		String
