@@ -5,6 +5,8 @@ endif
 syn region	monkeyCString		start=/\v"/ skip=/\v\\./ end=/\v"/
 syn match	monkeyCCharacter	"L\='[^\\]'"
 syn keyword	monkeyCBoolean		false true
+syn keyword	monkeyCNull		null
+syn keyword	monkeyCRepeat		for else do while
 syn keyword	monkeyCConditional	if else
 syn match	monkeyCInclude		"\vToybox(.\u\w+)*[^;]"
 syn keyword	monkeyCKeyword		using as extends has instanceof
@@ -47,6 +49,8 @@ syn region	monkeyCComment		start="/\*" end="\*/" contains=@Spell,monkeyCTodo
 hi link	monkeyCString		String
 hi link	monkeyCCharacter	Character
 hi link	monkeyCBoolean		Constant
+hi link	monkeyCNull		Constant
+hi link	monkeyCRepeat		Repeat
 hi link	monkeyCConditional	Conditional
 hi link	monkeyCInclude		Include
 hi link	monkeyCKeyword		Keyword
