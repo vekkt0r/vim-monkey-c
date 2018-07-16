@@ -6,11 +6,12 @@ syn region	monkeyCString		start=/\v"/ skip=/\v\\./ end=/\v"/
 syn match	monkeyCCharacter	"L\='[^\\]'"
 syn keyword	monkeyCBoolean		false true
 syn keyword	monkeyCNull		null
-syn keyword	monkeyCRepeat		for else do while
+syn keyword	monkeyCRepeat		for do while break continue
 syn keyword	monkeyCConditional	if else
 syn match	monkeyCInclude		"\vToybox(.\u\w+)*[^;]"
-syn keyword	monkeyCKeyword		using as extends has instanceof
-syn keyword	monkeyCStatement	new return continue hidden public protected private
+syn keyword	monkeyCKeyword		using as extends has instanceof self me
+syn keyword	monkeyCStatement	new return hidden public protected private
+syn keyword	monkeyCException	throw catch finally
 syn keyword	monkeyCStorageClass	var const
 syn keyword	monkeyCStructure	class function module enum
 
@@ -46,6 +47,9 @@ syn keyword	monkeyCTodo		TODO FIXME XXX TBD contained
 syn match	monkeyCComment		"\/\/.*" contains=@Spell,monkeyCTodo
 syn region	monkeyCComment		start="/\*" end="\*/" contains=@Spell,monkeyCTodo
 
+" apocryphal
+syn keyword	monkeyCDebug		print assert
+
 hi link	monkeyCString		String
 hi link	monkeyCCharacter	Character
 hi link	monkeyCBoolean		Constant
@@ -55,6 +59,7 @@ hi link	monkeyCConditional	Conditional
 hi link	monkeyCInclude		Include
 hi link	monkeyCKeyword		Keyword
 hi link	monkeyCStatement	Statement
+hi link	monkeyCException	Exception
 hi link	monkeyCStructure	Structure
 hi link	monkeyCStorageClass	StorageClass
 hi link	monkeyCType		Type
@@ -65,5 +70,6 @@ hi link	monkeyCNumber		Number
 hi link	monkeyCLabel		Label
 hi link	monkeyCComment		Comment
 hi link	monkeyCTodo		Todo
+hi link	monkeyCDebug		Debug
 
 let b:current_syntax = "monkey-c"
