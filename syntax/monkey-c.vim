@@ -11,7 +11,7 @@ syn keyword	monkeyCConditional	if else
 syn match	monkeyCInclude		"\vToybox(.\u\w+)*[^;]"
 syn keyword	monkeyCKeyword		using as extends has instanceof self me
 syn keyword	monkeyCStatement	new return hidden public protected private
-syn keyword	monkeyCException	throw catch finally
+syn keyword	monkeyCException	try catch throw finally
 syn keyword	monkeyCStorageClass	var const
 syn keyword	monkeyCStructure	class function module enum
 
