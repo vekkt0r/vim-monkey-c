@@ -48,7 +48,7 @@ syn match	monkeyCComment		"\/\/.*" contains=@Spell,monkeyCTodo
 syn region	monkeyCComment		start="/\*" end="\*/" contains=@Spell,monkeyCTodo
 
 " apocryphal
-syn keyword	monkeyCDebug		print assert
+syn keyword	monkeyCDebug		print assert format
 
 hi link	monkeyCString		String
 hi link	monkeyCCharacter	Character
