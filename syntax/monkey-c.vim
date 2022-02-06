@@ -12,7 +12,7 @@ syn match	monkeyCInclude		"\vToybox(.\u\w+)*[^;]"
 syn keyword	monkeyCKeyword		using as extends has instanceof self me
 syn keyword	monkeyCStatement	new return hidden public protected private
 syn keyword	monkeyCException	try catch throw finally
-syn keyword	monkeyCStorageClass	var const
+syn keyword	monkeyCStorageClass	var const static
 syn keyword	monkeyCStructure	class function module enum
 
 syn keyword	monkeyCType		Graphics System Lang WatchUi Timer Attention
