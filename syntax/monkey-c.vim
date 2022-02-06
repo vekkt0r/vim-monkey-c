@@ -7,7 +7,8 @@ syn match	monkeyCCharacter	"L\='[^\\]'"
 syn keyword	monkeyCBoolean		false true
 syn keyword	monkeyCNull		null
 syn keyword	monkeyCRepeat		for do while break continue
-syn keyword	monkeyCConditional	if else
+syn keyword	monkeyCConditional	if else switch
+syn keyword	monkeyCLabel		case default
 syn match	monkeyCInclude		"\vToybox(.\u\w+)*[^;]"
 syn keyword	monkeyCKeyword		using as extends has instanceof self me
 syn keyword	monkeyCStatement	new return hidden public protected private
